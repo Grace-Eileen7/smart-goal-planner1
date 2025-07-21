@@ -8,10 +8,10 @@ import {
   deleteGoal,
   makeDeposit,
 } from "../../lib/api";
-import Overview from "./Overview";
-import GoalCard from "./GoalCard";
-import AddGoalForm from "./AddGoalForm";
-import DepositForm from "./DepositForm";
+import Overview from "app/components/Overview";
+import GoalCard from "app/components/GoalCard";
+import AddGoalForm from "app/components/AddGoalForm";
+import DepositForm from "app/components/DepositForm";
 
 export default function SmartGoalPlanner() {
   const [goals, setGoals] = useState([]);
