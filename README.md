@@ -56,7 +56,7 @@ smart-goal-planner/
 
 ## 📸Screenshot
 
-![Smart Goal Planner Dashboard](./public/screenshot/Screenshot%202025-07-21%20183957.png)
+![Screenshot ](./public/screenshot/Screenshot%202025-07-21%20183957.png)
 
 ## ✨ Features
 
