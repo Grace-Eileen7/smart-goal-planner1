@@ -160,8 +160,8 @@ export default function SmartGoalPlanner() {
               <h2>Your Goals</h2>
               {goals.length === 0 && (
                 <p className="empty-state">
-                  No goals yet! Click "Add Goal" to create your first savings
-                  goal.
+                  No goals yet! Click &quot;Add Goal&quot; to create your first
+                  savings goal.
                 </p>
               )}
             </div>
