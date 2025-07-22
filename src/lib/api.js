@@ -1,5 +1,5 @@
 // API functions for communicating with json-server
-const API_BASE = "https://smart-goal-planner1.onrender.com";
+const API_BASE = "https://smart-goal-planner1-1.onrender.com";
 
 // Get all goals
 export async function getGoals() {
