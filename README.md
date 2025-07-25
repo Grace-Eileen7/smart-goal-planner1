@@ -2,7 +2,14 @@
 
 A beautiful and functional web app to track your savings goals built with Next.js and json-server.
 
-## 🌐 Live Demo
+## 🌐 Live Deployments
+
+- **Frontend (Vercel)**: [Smart Goal Planner](https://smart-goal-planner1-klx995k98-grace-eillen-bass-projects.vercel.app/)
+- **Backend (Render)**: [API Server](https://smart-goal-planner1.onrender.com)
+
+### 🛠 API Endpoints(Example)
+
+- `GET /goals`: [View Goals](https://smart-goal-planner1-1.onrender.com/goals)
 
 ## 🚀 Quick Start
 
@@ -55,8 +62,6 @@ smart-goal-planner/
 ```
 
 ## 📸Screenshot
-
-![Screenshot ](./public/screenshot/Screenshot%202025-07-21%20183957.png)
 
 ## ✨ Features
 

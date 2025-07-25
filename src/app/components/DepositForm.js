@@ -36,7 +36,7 @@ export default function DepositForm({ isOpen, onClose, onSubmit, goals }) {
 
   if (!isOpen) return null;
 
-  // Filter out completed goals
+  // Filtering out completed goals
   const activeGoals = goals.filter(
     (goal) => goal.savedAmount < goal.targetAmount
   );
