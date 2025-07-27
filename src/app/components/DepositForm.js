@@ -64,7 +64,7 @@ export default function DepositForm({ isOpen, onClose, onSubmit, goals }) {
               <option value="">Choose a goal...</option>
               {activeGoals.map((goal) => (
                 <option key={goal.id} value={goal.id}>
-                  {goal.name} (${goal.savedAmount.toLocaleString()} / $
+                  {goal.name} (Ksh{goal.savedAmount.toLocaleString()} / Ksh
                   {goal.targetAmount.toLocaleString()})
                 </option>
               ))}
@@ -72,7 +72,7 @@ export default function DepositForm({ isOpen, onClose, onSubmit, goals }) {
           </div>
 
           <div className="form-group">
-            <label htmlFor="amount">Deposit Amount ($) *</label>
+            <label htmlFor="amount">Deposit Amount (Ksh) *</label>
             <input
               type="number"
               id="amount"
@@ -100,15 +100,16 @@ export default function DepositForm({ isOpen, onClose, onSubmit, goals }) {
                 return (
                   <div className="preview-info">
                     <p>
-                      <strong>Current:</strong> $
+                      <strong>Current:</strong> Ksh
                       {selectedGoal.savedAmount.toLocaleString()}
                     </p>
                     <p>
-                      <strong>After deposit:</strong> $
+                      <strong>After deposit:</strong> Ksh
                       {newTotal.toLocaleString()}
                     </p>
                     <p>
-                      <strong>Remaining:</strong> ${remaining.toLocaleString()}
+                      <strong>Remaining:</strong> Ksh
+                      {remaining.toLocaleString()}
                     </p>
                     {newTotal >= selectedGoal.targetAmount && (
                       <p className="success-message">

@@ -7,7 +7,7 @@ export default function ProgressBar({ current, target, className = "" }) {
         <div className="progress-fill" style={{ width: `${percentage}%` }} />
       </div>
       <span className="progress-text">
-        ${current.toLocaleString()} / ${target.toLocaleString()} (
+        Ksh{current.toLocaleString()} / Ksh {target.toLocaleString()} (
         {percentage.toFixed(1)}%)
       </span>
     </div>

@@ -63,6 +63,11 @@ smart-goal-planner/
 
 ## 📸Screenshot
 
+<p align="center">
+  <img src="screenshots/overview.png" alt="Overview Screenshot" width="45%" />
+  <img src="screenshots/add-goal.png" alt="Add Goal Screenshot" width="45%" />
+</p>
+
 ## ✨ Features
 
 📊 Overview Dashboard

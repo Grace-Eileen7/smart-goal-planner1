@@ -1,3 +1,11 @@
+import {
+  FaBullseye,
+  FaCheckCircle,
+  FaMoneyBillWave,
+  FaMedal,
+  FaTimesCircle,
+  FaExclamationTriangle,
+} from "react-icons/fa";
 import StatCard from "./StatCard";
 
 export default function Overview({ goals }) {
@@ -25,45 +33,52 @@ export default function Overview({ goals }) {
 
   return (
     <div className="overview">
-      <h2 className="overview-title">🖥️ Goals Overview</h2>
+      <h2 className="overview-title">
+        {" "}
+        <FaBullseye /> Goals Overview
+      </h2>
 
       <div className="stats-grid">
         <StatCard
           title="Total Goals"
           value={totalGoals}
-          icon="🎯"
+          icon={<FaBullseye />}
           color="purple"
         />
 
         <StatCard
           title="Completed"
           value={`${completedGoals} / ${totalGoals}`}
-          icon="💯"
+          icon={<FaCheckCircle />}
           color="blue"
         />
 
         <StatCard
           title="Total Saved"
-          value={`$${totalSaved.toLocaleString()}`}
-          icon="💸"
+          value={`Ksh ${totalSaved.toLocaleString()}`}
+          icon={<FaMoneyBillWave />}
           color="green"
         />
 
         <StatCard
           title="Total Target"
-          value={`$${totalTarget.toLocaleString()}`}
-          icon="🥇"
+          value={`Ksh ${totalTarget.toLocaleString()}`}
+          icon={<FaMedal />}
           color="pink"
         />
       </div>
 
       {(overdueGoals > 0 || soonDeadlines > 0) && (
         <div className="alerts-section">
-          <h3 className="alerts-title">⚠️ Alerts</h3>
+          <h3 className="alerts-title">
+            <FaExclamationTriangle /> Alerts
+          </h3>
           <div className="alerts-grid">
             {overdueGoals > 0 && (
               <div className="alert alert-danger">
-                <span className="alert-icon">❌</span>
+                <span className="alert-icon">
+                  <FaTimesCircle />
+                </span>
                 <div>
                   <strong>Overdue Goals</strong>
                   <p>
@@ -76,7 +91,9 @@ export default function Overview({ goals }) {
 
             {soonDeadlines > 0 && (
               <div className="alert alert-warning">
-                <span className="alert-icon">⚠️</span>
+                <span className="alert-icon">
+                  <FaExclamationTriangle />
+                </span>
                 <div>
                   <strong>Upcoming Deadlines</strong>
                   <p>
@@ -103,7 +120,7 @@ export default function Overview({ goals }) {
           />
         </div>
         <p className="progress-text">
-          ${totalSaved.toLocaleString()} / ${totalTarget.toLocaleString()}(
+          Ksh{totalSaved.toLocaleString()} / Ksh{totalTarget.toLocaleString()} (
           {totalTarget > 0 ? ((totalSaved / totalTarget) * 100).toFixed(1) : 0}%
           complete)
         </p>

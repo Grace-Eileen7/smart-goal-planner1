@@ -13,6 +13,14 @@ import GoalCard from "app/components/GoalCard";
 import AddGoalForm from "app/components/AddGoalForm";
 import DepositForm from "app/components/DepositForm";
 
+import {
+  FaLaptopCode,
+  FaPlus,
+  FaCreditCard,
+  FaChartBar,
+  FaBullseye,
+} from "react-icons/fa";
+
 export default function SmartGoalPlanner() {
   const [goals, setGoals] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -85,7 +93,7 @@ export default function SmartGoalPlanner() {
       // Check if goal is now completed
       if (updatedGoal.savedAmount >= updatedGoal.targetAmount) {
         alert(
-          `🎉 Congratulations! You've completed your "${updatedGoal.name}" goal!`
+          `Congratulations! You've completed your "${updatedGoal.name}" goal!`
         );
       }
     } catch (error) {
@@ -110,7 +118,9 @@ export default function SmartGoalPlanner() {
   return (
     <div className="smart-goal-planner">
       <header className="app-header">
-        <h1 className="app-title">👩‍💻 Smart Goal Planner</h1>
+        <h1 className="app-title">
+          <FaLaptopCode /> Smart Goal Planner
+        </h1>
         <p className="app-subtitle">
           Track your savings goals and achieve your dreams!
         </p>
@@ -120,14 +130,14 @@ export default function SmartGoalPlanner() {
             className="btn btn-primary"
             onClick={() => setShowAddForm(true)}
           >
-            ➕ Add Goal
+            <FaPlus /> Add Goal
           </button>
           <button
             className="btn btn-success"
             onClick={() => setShowDepositForm(true)}
             disabled={goals.length === 0}
           >
-            💳 Make Deposit
+            <FaCreditCard /> Make Deposit
           </button>
         </div>
       </header>
@@ -137,13 +147,13 @@ export default function SmartGoalPlanner() {
           className={`tab-btn ${activeTab === "overview" ? "active" : ""}`}
           onClick={() => setActiveTab("overview")}
         >
-          📊 Overview
+          <FaChartBar /> Overview
         </button>
         <button
           className={`tab-btn ${activeTab === "goals" ? "active" : ""}`}
           onClick={() => setActiveTab("goals")}
         >
-          🎯 Goals ({goals.length})
+          <FaBullseye /> Goals ({goals.length})
         </button>
       </nav>
 

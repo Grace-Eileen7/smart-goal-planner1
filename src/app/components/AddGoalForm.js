@@ -69,7 +69,7 @@ export default function AddGoalForm({
           </div>
 
           <div className="form-group">
-            <label htmlFor="targetAmount">Target Amount ($) *</label>
+            <label htmlFor="targetAmount">Target Amount (Ksh) *</label>
             <input
               type="number"
               id="targetAmount"
