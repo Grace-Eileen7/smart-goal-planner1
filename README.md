@@ -4,7 +4,7 @@ A beautiful and functional web app to track your savings goals built with Next.j
 
 ## 🌐 Live Deployments
 
-- **Frontend (Vercel)**: [Smart Goal Planner](https://smart-goal-planner1-klx995k98-grace-eillen-bass-projects.vercel.app/)
+- **Frontend (Vercel)**: [Smart Goal Planner](https://smart-goal-planner1-8uhpqrcjc-grace-eillen-bass-projects.vercel.app/)
 - **Backend (Render)**: [API Server](https://smart-goal-planner1.onrender.com)
 
 ### 🛠 API Endpoints(Example)
